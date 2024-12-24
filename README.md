@@ -22,7 +22,7 @@ This extension has the following settings:
 
 ## Community Feedback and Ideas
 
-We value input from our users! Help make VSChristmas even more festive:
+We value input from our users! Help make Obsidian-Christmas even more festive:
 
 **Share Your Ideas**
 
@@ -34,7 +34,7 @@ Please open a [GitHub Discussion](https://github.com/Matse2005/Obsidian-Christma
 
 -   Visual customization options
 -   Additional holiday-related commands
--   Integration with other VS Code features
+-   Integration with other Obsidian features
 -   Accessibility improvements
 
 Your feedback helps improve the extension and guides our development priorities!
@@ -72,7 +72,7 @@ We welcome contributions from the community! Here's how you can help:
 4. Submit a Pull Request:
     - Write a clear description of your changes
     - Reference any related issues
-          <!-- - Update documentation if needed -->
+        <!-- - Update documentation if needed -->
 
 ### Coding Guidelines
 
