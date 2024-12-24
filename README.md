@@ -5,7 +5,7 @@ An Obsidian extension that brings Christmas spirit to your editor by showing the
 ## Features
 
 -   `Days Until Christmas` Command to check the countdown
--   Status bar buttons showing days until Christmas
+-   Status bar button showing days until Christmas
 
 ## Extension Settings
 
@@ -72,7 +72,7 @@ We welcome contributions from the community! Here's how you can help:
 4. Submit a Pull Request:
     - Write a clear description of your changes
     - Reference any related issues
-        <!-- - Update documentation if needed -->
+          <!-- - Update documentation if needed -->
 
 ### Coding Guidelines
 
