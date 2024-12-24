@@ -18,7 +18,7 @@ This extension has the following settings:
 
 ## Manually installing the plugin
 
--   Copy over `main.js` and `manifest.json` to your vault `VaultFolder/.obsidian/plugins/obsidian-christmas/`.
+-   Copy over `main.js` and `manifest.json` to your vault `VaultFolder/.obsidian/plugins/Christmas/`.
 
 ## Community Feedback and Ideas
 
@@ -46,7 +46,7 @@ We welcome contributions from the community! Here's how you can help:
 ### Setting up the Development Environment
 
 1. Create a new vault for your development
-2. Fork and clone the repository to `VaultFolder/.obsidian/plugins/Obsidian-Christmas/`
+2. Fork and clone the repository to `VaultFolder/.obsidian/plugins/Christmas/`
 3. Run `npm install` to install dependencies
 4. Open the project in an IDE of your choice
 5. Run `npm run dev`

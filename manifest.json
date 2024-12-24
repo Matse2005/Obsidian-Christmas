@@ -1,6 +1,6 @@
 {
-	"id": "obsidian-christmas",
-	"name": "Obsidian Christmas",
+	"id": "christmas",
+	"name": "Christmas",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Track the time left till Chirstmas.",
