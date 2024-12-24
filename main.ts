@@ -14,8 +14,6 @@ export default class ChristmasPlugin extends Plugin {
 
 		this.addSettingTab(new ChristmasSettingTab(this.app, this));
 
-		this.injectCSS();
-
 		daysLeftCommand(this);
 
 		this.statusBarManager = new StatusBarManager(this);
@@ -28,21 +26,5 @@ export default class ChristmasPlugin extends Plugin {
 
 	async onunload() {
 		await this.configManager.saveSettings();
-	}
-
-	injectCSS() {
-		const css = `
-      .christmas-statusbar {
-        cursor: pointer;
-      }
-
-      .christmas-statusbar:hover {
-        background-color: var(--background-modifier-hover);
-      }
-    `;
-
-		const style = document.createElement('style');
-		style.textContent = css;
-		document.head.appendChild(style);
 	}
 }
