@@ -1,20 +1,20 @@
-# Obsidian Christmas
+# Christmas
 
-An Obsidian extension that brings Christmas spirit to your editor by showing the countdown to Christmas.
+An Obsidian plugin that brings Christmas spirit to your editor by showing the countdown to Christmas.
 
 ## Features
 
--   `Days Until Christmas` Command to check the countdown
+-   `Days until Christmas` Command to check the countdown
 -   Status bar button showing days until Christmas
 
 ## Extension Settings
 
 This extension has the following settings:
 
--   `toggleLargeStatusBarText`: Toggle the text beside the icon for the status bar icon
--   `StatusBarVisibleTimeBeforeChistmas`: Make the Christmas button show up on a specific time before Christmas
--   `ChristmasDay`: The calendar day of Christmas at your location
--   `ChristmasMonth`: The calendar month of Christmas at your location
+-   `Toggle large statusbar text`: Toggle the text beside the icon for the status bar icon
+-   `Statusbar visible time before Chistmas`: Make the Christmas button show up on a specific time before Christmas
+-   `Christmas day`: The calendar day of Christmas at your location
+-   `Christmas month`: The calendar month of Christmas at your location
 
 ## Manually installing the plugin
 
@@ -72,7 +72,7 @@ We welcome contributions from the community! Here's how you can help:
 4. Submit a Pull Request:
     - Write a clear description of your changes
     - Reference any related issues
-          <!-- - Update documentation if needed -->
+        <!-- - Update documentation if needed -->
 
 ### Coding Guidelines
 

@@ -9,7 +9,7 @@ export class StatusBarManager {
   private configManager: ConfigManager;
   private daysCalculator: ChristmasDaysCalculator;
   private calculator: ChristmasCountdownCalculator;
-  private readonly loadingStatusBarText: string = "VSChristmas is starting...";
+  private readonly loadingStatusBarText: string = "Christmas Plugin is starting...";
   private readonly statusBarIcon: string = "🎅";
 
   constructor(private plugin: ChristmasPlugin) {

@@ -5,8 +5,8 @@ import ChristmasPlugin from 'main';
 export function daysLeftCommand(plugin: ChristmasPlugin) {
   plugin.addCommand({
     id: "daysLeft",
-    name: 'Show Days Left Until Christmas',
-    callback: () => daysLeft(plugin)  // Fix this line to call daysLeft correctly
+    name: 'Show days left until Christmas',
+    callback: () => daysLeft(plugin)
   });
 }
 

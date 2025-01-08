@@ -15,7 +15,7 @@ export class ChristmasSettingTab extends PluginSettingTab {
     containerEl.empty();
 
     new Setting(containerEl)
-      .setName('Christmas Day')
+      .setName('Christmas day')
       .setDesc('The calendar day of Christmas at your location')
       .addText((text) =>
         text
@@ -35,7 +35,7 @@ export class ChristmasSettingTab extends PluginSettingTab {
       );
 
     new Setting(containerEl)
-      .setName('Christmas Month')
+      .setName('Christmas month')
       .setDesc('The calendar month of Christmas at your location')
       .addDropdown((dropdown) =>
         dropdown
@@ -71,7 +71,7 @@ export class ChristmasSettingTab extends PluginSettingTab {
     };
 
     new Setting(containerEl)
-      .setName('Status Bar Visible Time Before Christmas')
+      .setName('Statusbar visible time before Christmas')
       .setDesc('Make the Christmas Statusbar show up on a specific time before Christmas')
       .addDropdown((dropdown) =>
         dropdown
@@ -84,7 +84,7 @@ export class ChristmasSettingTab extends PluginSettingTab {
       );
 
     new Setting(containerEl)
-      .setName('Large Status Bar Text')
+      .setName('Large Statusbar text')
       .setDesc('Enable or disable large text in the status bar')
       .addToggle((toggle) =>
         toggle
