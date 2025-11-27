@@ -81,18 +81,42 @@ export class ChristmasCountdownCalculator {
 
     // Handle post-Christmas period (within 5 days)
     if (christmasDays.daysSinceLast !== null && christmasDays.daysSinceLast <= 5) {
-      return `Christmas was ${christmasDays.daysSinceLast} ${christmasDays.daysSinceLast === 1 ? 'day' : 'days'} ago`;
+      if (time.days > 0) {
+        return `Christmas was ${time.days} ${time.days === 1 ? 'day' : 'days'} ago`;
+      } else if (time.hours > 0) {
+        return `Christmas was ${time.hours} ${time.hours === 1 ? 'hour' : 'hours'} ago`;
+      } else if (time.minutes > 0) {
+        return `Christmas was ${time.minutes} ${time.minutes === 1 ? 'minute' : 'minutes'} ago`;
+      } else {
+        return `Christmas was ${time.seconds} ${time.seconds === 1 ? 'second' : 'seconds'} ago`;
+      }
     }
 
     // Handle countdown to next Christmas
     const parts = [];
-    if (time.days > 0) parts.push(`${time.days} ${time.days === 1 ? 'day' : 'days'}`);
-    if (time.hours > 0 || time.days > 0) parts.push(`${time.hours} ${time.hours === 1 ? 'hour' : 'hours'}`);
-    if (time.minutes > 0 || time.hours > 0 || time.days > 0) parts.push(`${time.minutes} ${time.minutes === 1 ? 'minute' : 'minutes'}`);
-    if (time.seconds > 0 || (time.minutes === 0 && time.hours === 0 && time.days === 0)) {
-      parts.push(`${time.seconds} ${time.seconds === 1 ? 'second' : 'seconds'}`);
+
+    if (time.days > 0)
+      parts.push(`${time.days} ${time.days === 1 ? "day" : "days"}`);
+
+    if (time.hours > 0 || time.days > 0)
+      parts.push(`${time.hours} ${time.hours === 1 ? "hour" : "hours"}`);
+
+    if (time.minutes > 0 || time.hours > 0 || time.days > 0)
+      parts.push(`${time.minutes} ${time.minutes === 1 ? "minute" : "minutes"}`);
+
+    if (
+      this.configManager.settings.toggleSecondsInStatusBar
+    ) {
+      parts.push(`${time.seconds} ${time.seconds === 1 ? "second" : "seconds"}`);
     }
 
-    return parts.join(', ');
+    function joinWithAnd(parts: string[]) {
+      if (parts.length === 0) return "";
+      if (parts.length === 1) return parts[0];
+      if (parts.length === 2) return parts.join(" and ");
+      return parts.slice(0, -1).join(", ") + " and " + parts[parts.length - 1];
+    }
+
+    return joinWithAnd(parts);
   }
 }

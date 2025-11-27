@@ -84,13 +84,25 @@ export class ChristmasSettingTab extends PluginSettingTab {
       );
 
     new Setting(containerEl)
-      .setName('Large Statusbar text')
+      .setName('Large statusbar text')
       .setDesc('Enable or disable large text in the status bar')
       .addToggle((toggle) =>
         toggle
           .setValue(this.plugin.configManager.settings.toggleLargeStatusBarText)
           .onChange(async (value) => {
             this.plugin.configManager.settings.toggleLargeStatusBarText = value;
+            await this.plugin.configManager.saveSettings();
+          })
+      );
+
+    new Setting(containerEl)
+      .setName('Toggle seconds in statusbar')
+      .setDesc('Toggle the seconds in the status bar.')
+      .addToggle((toggle) =>
+        toggle
+          .setValue(this.plugin.configManager.settings.toggleSecondsInStatusBar)
+          .onChange(async (value) => {
+            this.plugin.configManager.settings.toggleSecondsInStatusBar = value;
             await this.plugin.configManager.saveSettings();
           })
       );

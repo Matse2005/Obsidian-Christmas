@@ -5,6 +5,7 @@ interface ChristmasSettings {
   toggleLargeStatusBarText: boolean;
   ChristmasDay: number;
   ChristmasMonth: number;
+  toggleSecondsInStatusBar: boolean
 }
 
 const DEFAULT_SETTINGS: Partial<ChristmasSettings> = {
@@ -12,6 +13,7 @@ const DEFAULT_SETTINGS: Partial<ChristmasSettings> = {
   toggleLargeStatusBarText: true,
   ChristmasDay: 25,
   ChristmasMonth: 12,
+  toggleSecondsInStatusBar: true
 };
 
 export class ConfigManager {
